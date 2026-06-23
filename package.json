@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Premium Developer Portfolio for Kota Bhanu Prasanth Reddy",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y http-server -p 3000",
+    "deploy:netlify": "npx -y netlify-cli deploy --prod --dir=.",
+    "deploy:vercel": "npx -y vercel --prod"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "resume",
+    "website"
+  ],
+  "author": "Kota Bhanu Prasanth Reddy",
+  "license": "ISC"
+}
