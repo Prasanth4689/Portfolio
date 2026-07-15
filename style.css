@@ -811,9 +811,11 @@ section {
     overflow: hidden;
 }
 
-.project-gradient-bg {
+.project-gradient-bg,
+.project-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     transition: transform var(--transition-slow);
 }
 
@@ -823,7 +825,8 @@ section {
 .g-3 { background: linear-gradient(135deg, #f59e0b, #e11d48); }
 .g-4 { background: linear-gradient(135deg, #10b981, #3b82f6); }
 
-.project-card:hover .project-gradient-bg {
+.project-card:hover .project-gradient-bg,
+.project-card:hover .project-img {
     transform: scale(1.08);
 }
 
