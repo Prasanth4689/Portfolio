@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kota Bhanu Prasanth Reddy - Resume</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="resume.css">
+</head>
+<body>
+
+    <!-- Resume Control Panel (Hidden during print) -->
+    <div class="control-panel">
+        <button id="btn-print" class="control-btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            Print / Save as PDF
+        </button>
+        <button id="btn-edit" class="control-btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+            <span id="edit-text">Enable Edit Mode</span>
+        </button>
+        <button id="btn-back" class="control-btn btn-tertiary" onclick="window.location.href='index.html'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            Back to Portfolio
+        </button>
+        <div class="edit-hint">Click any text to edit when Edit Mode is active!</div>
+    </div>
+
+    <!-- Resume Container -->
+    <div class="resume-container" id="resume-content">
+        
+        <!-- Header -->
+        <header class="resume-header">
+            <div class="header-left">
+                <h1 class="name" contenteditable="false" id="field-name">KOTA BHANU PRASANTH REDDY</h1>
+                <div class="role" contenteditable="false" id="field-role">The role you are applying for?</div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span contenteditable="false" id="field-phone">+91 88854 94689</span>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:bhanuprasanth2605@gmail.com" id="field-email" contenteditable="false">bhanuprasanth2605@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <a href="https://linkedin.com/in/prasanth4689" target="_blank" id="field-linkedin" contenteditable="false">linkedin.com/in/prasanth4689</a>
+                    </div>
+                    <div class="contact-item">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <a href="https://github.com/Prasanth4689" target="_blank" id="field-github" contenteditable="false">github.com/Prasanth4689</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="photo-container" id="photo-container" title="Click to upload profile photo (Edit mode only)">
+                    <img src="https://github.com/Prasanth4689.png" alt="Kota Bhanu Prasanth Reddy" class="profile-photo" id="profile-img">
+                    <div class="photo-overlay">Click to change</div>
+                </div>
+                <input type="file" id="photo-upload" style="display: none;" accept="image/*">
+            </div>
+        </header>
+
+        <!-- Two Column Content -->
+        <div class="resume-body">
+            
+            <!-- Left Column -->
+            <div class="column-left">
+                
+                <!-- Projects -->
+                <section class="resume-section">
+                    <h2 class="section-title">PROJECTS</h2>
+                    
+                    <div class="project-item">
+                        <h3 class="project-name" contenteditable="false">AI Smart Trip Planner</h3>
+                        <div class="project-subtitle" contenteditable="false">Web-Based Travel Recommendation System</div>
+                        <ul class="project-bullets">
+                            <li contenteditable="false">Developed a web application to generate personalized travel plans based on user inputs like destination, budget, and travel dates.</li>
+                            <li contenteditable="false">Implemented logic for custom travel recommendations considering multiple constraints.</li>
+                            <li contenteditable="false">Designed a responsive and interactive UI for improved usability.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="project-name" contenteditable="false">Hybrid Image Forgery Detection System</h3>
+                        <div class="project-tags" contenteditable="false">PyTorch — ConvNeXt — EfficientNet — Vision Transformer — Computer Vision</div>
+                        <ul class="project-bullets">
+                            <li contenteditable="false">Developed a hybrid deep learning system for image forgery detection using CNNs, ViT, and handcrafted features.</li>
+                            <li contenteditable="false">Implemented attention-based feature fusion, focal loss, and ensemble learning for improved accuracy.</li>
+                            <li contenteditable="false">Achieved up to 96% accuracy on CoMoFoD and CASIA v2.0 forgery datasets.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="project-name" contenteditable="false">Car Rental Customer Feedback Analyzer</h3>
+                        <div class="project-subtitle" contenteditable="false">GenAI-Based Sentiment Analysis System</div>
+                        <div class="project-tags" contenteditable="false">Python | IBM watsonx.ai | NLP | Prompt Engineering</div>
+                        <ul class="project-bullets">
+                            <li contenteditable="false">Developed a GenAI-powered system for sentiment analysis of customer reviews.</li>
+                            <li contenteditable="false">Applied prompt engineering for improved classification accuracy.</li>
+                            <li contenteditable="false">Identified key issues and implemented priority-based categorization for insights.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <h3 class="project-name" contenteditable="false">VeriCourt – AI-Enhanced Judicial Support System</h3>
+                        <div class="project-tags" contenteditable="false">FastAPI — React.js — RAG — Generative AI — Computer Vision</div>
+                        <ul class="project-bullets">
+                            <li contenteditable="false">Developed an AI-powered platform for evidence authentication and legal assistance.</li>
+                            <li contenteditable="false">Built deepfake and tampering detection modules for images, audio, and videos.</li>
+                            <li contenteditable="false">Implemented a RAG-based legal chatbot and courtroom debate simulator.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Key Achievements -->
+                <section class="resume-section">
+                    <h2 class="section-title">KEY ACHIEVEMENTS</h2>
+                    
+                    <div class="achievement-item">
+                        <div class="achievement-icon-wrapper">
+                            <svg class="achieve-svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34M12 2a4 4 0 0 1 4 4v7a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4Z"></path></svg>
+                        </div>
+                        <div class="achievement-text">
+                            <h4 class="achievement-title" contenteditable="false">State 1st Prize, World Space Week – ISRO</h4>
+                            <p class="achievement-desc" contenteditable="false">Awarded for excellence in space science innovation and problem-solving</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-item">
+                        <div class="achievement-icon-wrapper">
+                            <svg class="achieve-svg-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                        </div>
+                        <div class="achievement-text">
+                            <h4 class="achievement-title" contenteditable="false">Reliance Foundation Scholar</h4>
+                            <p class="achievement-desc" contenteditable="false">Selected as a Reliance Foundation Scholar, receiving a 4-year merit-based scholarship awarded to top-performing students across the country, recognizing consistent academic excellence and potential for future leadership</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="column-right">
+                
+                <!-- Education -->
+                <section class="resume-section">
+                    <h2 class="section-title">EDUCATION</h2>
+                    
+                    <div class="education-item">
+                        <h4 class="edu-degree" contenteditable="false">B.Tech. in Computer Science</h4>
+                        <div class="edu-school" contenteditable="false">Vellore Institute of Technology</div>
+                        <div class="edu-meta">
+                            <div class="meta-item">
+                                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <span contenteditable="false">07/2023 - Present</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-12a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span contenteditable="false">Vellore, Tamil Nadu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-item">
+                        <h4 class="edu-degree" contenteditable="false">Class XII</h4>
+                        <div class="edu-school" contenteditable="false">Bhashyam Junior College</div>
+                        <div class="edu-meta">
+                            <div class="meta-item">
+                                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                <span contenteditable="false">06/2021 - 04/2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <svg class="meta-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-12a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <span contenteditable="false">Guntur, Andhra Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="resume-section">
+                    <h2 class="section-title">SKILLS</h2>
+                    
+                    <div class="skills-block">
+                        <h4 class="skill-category-title" contenteditable="false">Web Technologies</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge" contenteditable="false">HTML</span>
+                            <span class="skill-badge" contenteditable="false">CSS</span>
+                            <span class="skill-badge" contenteditable="false">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <h4 class="skill-category-title" contenteditable="false">AI/ML & GenAI</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge" contenteditable="false">Machine Learning</span>
+                            <span class="skill-badge" contenteditable="false">Deep Learning</span>
+                            <span class="skill-badge" contenteditable="false">Computer Vision</span>
+                            <span class="skill-badge" contenteditable="false">NLP</span>
+                            <span class="skill-badge" contenteditable="false">Generative AI</span>
+                            <span class="skill-badge" contenteditable="false">RAG</span>
+                            <span class="skill-badge" contenteditable="false">Prompt Engineering</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <h4 class="skill-category-title" contenteditable="false">Frameworks & Tools</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge" contenteditable="false">PyTorch</span>
+                            <span class="skill-badge" contenteditable="false">FastAPI</span>
+                            <span class="skill-badge" contenteditable="false">React.js</span>
+                            <span class="skill-badge" contenteditable="false">NumPy</span>
+                            <span class="skill-badge" contenteditable="false">Git</span>
+                            <span class="skill-badge" contenteditable="false">GitHub</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-block">
+                        <h4 class="skill-category-title" contenteditable="false">Platforms</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge" contenteditable="false">IBM watsonx.ai</span>
+                            <span class="skill-badge" contenteditable="false">IBM Cloud</span>
+                            <span class="skill-badge" contenteditable="false">AWS</span>
+                            <span class="skill-badge" contenteditable="false">Vercel</span>
+                            <span class="skill-badge" contenteditable="false">VS Code</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section class="resume-section">
+                    <h2 class="section-title">CERTIFICATIONS</h2>
+                    
+                    <div class="cert-item">
+                        <h4 class="cert-name" contenteditable="false">IBM Generative AI Certificate</h4>
+                        <div class="cert-issuer" contenteditable="false">IBM</div>
+                    </div>
+
+                    <div class="cert-item">
+                        <h4 class="cert-name" contenteditable="false">The Complete Full-Stack Web Development Bootcamp</h4>
+                        <div class="cert-issuer" contenteditable="false">Udemy</div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script for print/edit operations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const btnPrint = document.getElementById('btn-print');
+            const btnEdit = document.getElementById('btn-edit');
+            const editText = document.getElementById('edit-text');
+            const photoContainer = document.getElementById('photo-container');
+            const photoUpload = document.getElementById('photo-upload');
+            const profileImg = document.getElementById('profile-img');
+            
+            let isEditMode = false;
+
+            // Print function
+            btnPrint.addEventListener('click', () => {
+                window.print();
+            });
+
+            // Toggle Edit Mode
+            btnEdit.addEventListener('click', () => {
+                isEditMode = !isEditMode;
+                
+                // Toggle contenteditable attributes
+                const editableElements = document.querySelectorAll('[contenteditable]');
+                editableElements.forEach(el => {
+                    el.setAttribute('contenteditable', isEditMode ? 'true' : 'false');
+                });
+
+                if (isEditMode) {
+                    btnEdit.classList.add('active');
+                    btnEdit.classList.remove('btn-secondary');
+                    btnEdit.classList.add('btn-primary-active');
+                    editText.textContent = 'Disable Edit Mode';
+                    document.body.classList.add('edit-mode-active');
+                } else {
+                    btnEdit.classList.remove('active');
+                    btnEdit.classList.add('btn-secondary');
+                    btnEdit.classList.remove('btn-primary-active');
+                    editText.textContent = 'Enable Edit Mode';
+                    document.body.classList.remove('edit-mode-active');
+                }
+            });
+
+            // Photo upload handling (Only in Edit mode)
+            photoContainer.addEventListener('click', () => {
+                if (isEditMode) {
+                    photoUpload.click();
+                }
+            });
+
+            photoUpload.addEventListener('change', (e) => {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        profileImg.src = event.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
